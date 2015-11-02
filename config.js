@@ -25,10 +25,10 @@ config = {
          mail: {
              transport: 'SMTP',
              options: {
-                 service: process.env.emailService,
+                 service: 'Mailgun',
                  auth: {
-                     user: process.env.emailUsername, // mailgun username
-                     pass: process.env.emailPassword  // mailgun password
+                     user: 'postmaster@sandboxca690c98e4c347f0bce82d81778f4682.mailgun.org', // mailgun username
+                     pass: '3d98973c8fcdcbb1cc4f0cecb31df7dc'  // mailgun password
                  }
              }
          },
@@ -60,14 +60,14 @@ config = {
 
         // Visit http://support.ghost.org/mail for instructions
         mail: {
-         transport: 'SMTP',
-         options: {
-             service: process.env.emailService,
-             auth: {
-                 user: process.env.emailUsername, // mailgun username
-                 pass: process.env.emailPassword  // mailgun password
-             }
-         }
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@sandboxca690c98e4c347f0bce82d81778f4682.mailgun.org', // mailgun username
+                    pass: '3d98973c8fcdcbb1cc4f0cecb31df7dc'  // mailgun password
+                }
+            }
         },
         database: {
             client: 'sqlite3',
